@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'banco-bogota-app';
+  title = 'Banco de Bogota';
+  herramientas: string= 'Spring con Angular 7';
 }
