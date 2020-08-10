@@ -1,6 +1,10 @@
 .footer{
   position:absolute;
+<<<<<<< HEAD
   bottom:0px;/*para dejar el pie de pagina al final*/
+=======
+  bottom:0px;
+>>>>>>> feature2
   height:40px;
   width:100%;
 }
