@@ -1,8 +1,93 @@
 <app-header></app-header>
 
+<div class="container">
+
 <h1>{{title}}</h1>
 <ul>
-  <li>{{herramientas}}</li>
+  <li>
+    <h2>{{formulario}}</h2>
+  </li>
 </ul>
+<form name="form1" action="/recursoEnServidor"
+             method="post" onsubmit="return validarForma(this);">
+           <input type="hidden" name="oculto" value="valorOculto">
+           <table width="200" id="one-column-emphasis">
+               <caption></caption>
+               <tr>
+                   <td class="oce-first">Nombre Empleado:</td>
+                   <td>
+                       <input class="default" type="text" name="usuario"
+                              value="Nombre y apellido"
+                              onfocus="this.select();">
+                   </td>
+               </tr>
+               <tr>
+                   <td class="oce-first">ID Empledo:</td>
+                   <td>
+                       <input class="default" type="text"
+                              name="idempleado" onfocus="this.select();">
+                   </td>
+               </tr>
+               <tr>
+                   <td class="oce-first">Desarrollador de:</td>
+                   <td>
+                       Java <input type="checkbox" name="tecnologia" value="Java">
+                       Angular <input type="checkbox" name="tecnologia" value="Angular">
+                       SQL  <input type="checkbox" name="tecnologia" value="SQL">
+                   </td>
+               </tr>
+               <tr>
+                   <td class="oce-first">G&eacute;nero</td>
+                   <td>
+                       Hombre<input type="radio" name="genero" value="H">
+                       &nbsp;
+                       Mujer <input type="radio" name="genero" value="M">
+                   </td>
+               </tr>
+               <tr>
+                   <td class="oce-first">Experiencia:</td>
+                   <td>
+                       <select name="ocupacion" class="default">
+                           <option value="">Seleccionar</option>
+                           <option value="1">Back-end</option>
+                           <option value="2">Front-end</option>
+                           <option value="3">Full-Stack</option>
+                           <option value="4">Otro</option>
+                       </select>
+                   </td>
+               </tr>
+               <tr>
+                   <td class="oce-first">Area de Desarrollo</td>
+                   <td>
+                       <select multiple name="Areas de desarrollo:" class="default">
+                           <option value="Servicio al cliente">Servicio al cliente</option>
+                           <option value="Contabilidad">Contabilidad</option>
+                           <option value="Gestion Humana">Gestion Humana</option>
+                       </select>
+                   </td>
+               </tr>
+               <tr>
+                   <td class="oce-first">Comentarios</td>
+                   <td>
+                       <textarea name="comentarios"
+                                 cols="30"
+                                 rows="2"
+                                 class="default"
+                                 onfocus="this.select();"
+                                 >Escribir un texto
+                       </textarea>
+                   </td>
+               </tr>
+               <tr style="text-align:center;">
+                   <td>
+                       <input type="reset" value="Limpiar" class="default">
+                   </td>
+                   <td>
+                       <input type="submit" value="Enviar" class="default">
+                   </td>
+               </tr>
+           </table>
+       </form>
 
+</div>
 <app-footer></app-footer>

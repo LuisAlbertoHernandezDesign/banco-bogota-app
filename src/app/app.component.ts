@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Banco de Bogota';
-  herramientas: string= 'Spring con Angular 7';
+  title = 'Agregar Empleado Banco de Bogota';
+  formulario: string= 'Formulario';
 }
